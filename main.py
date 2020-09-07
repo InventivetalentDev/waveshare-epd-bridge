@@ -7,7 +7,7 @@ import os
 
 picdir = '/home/pi/epd-test-py/e-Paper/RaspberryPi&JetsonNano/python/pic/'
 libdir = '/home/pi/epd-test-py/e-Paper/RaspberryPi&JetsonNano/python/lib/'
-imgfile = './img.bmp'
+imgfile = '/home/pi/epd-bridge/img.bmp'
 if os.path.exists(libdir):
     sys.path.append(libdir)
 
@@ -50,7 +50,7 @@ try:
     epd.sleep()
     epd.Dev_exit()
 
-    epd7in5.epdconfig.module_exit()
+    #epd7in5_V2.epdconfig.module_exit()
     exit()
 
 except IOError as e:
